@@ -8,7 +8,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-lg">Parcerias com:</p>
             <div className="flex flex-wrap justify-center items-center gap-12">
               <img 
-                src="https://www.campusagreement.com/images/logo.png" 
+                src="src/assets/microsoftCAlogo.png" 
                 alt="Campus Agreement" 
                 className="h-8 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
               />
@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Bottom */}
           <div className="text-center text-sm text-muted-foreground border-t border-border pt-8">
-            <p>© {new Date().getFullYear()} Unisanta - Universidade Santa Cecília. Todos os direitos reservados.</p>
+            <p>© 2025 Unisanta - Este site foi feito voluntariamente por alunos da Unisanta.</p>
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
-import unisantaBuilding from "@/assets/unisanta-building.png";
 
 const CoursesSection = () => {
   return (
-    <section id="ads" className="py-20 bg-card">
+    <section className="py-20 bg-card">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -27,7 +26,7 @@ const CoursesSection = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-primary/10 blur-xl group-hover:bg-primary/20 transition-all duration-500 rounded-2xl" />
             <img 
-              src={unisantaBuilding} 
+              src="src/assets/unisantafachada.png" 
               alt="Prédio Unisanta" 
               className="relative w-full h-auto rounded-2xl shadow-2xl border border-border"
             />

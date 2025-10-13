@@ -11,9 +11,11 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img 
-            src="https://www.unisanta.br/sites/default/files/logo-unisanta-branco.png" 
+            src="src/assets/logo-vertical-branco.png"
             alt="Unisanta" 
             className="h-10"
+            width={200}
+            height={100}
           />
         </div>
         
@@ -26,7 +28,7 @@ const Header = () => {
           </button>
           <button 
             onClick={() => scrollToSection('ads')}
-            className="text-foreground hover:text-primary transition-colors font-medium"
+            className="text-foreground hover:text-ads transition-colors font-medium"
           >
             ADS
           </button>

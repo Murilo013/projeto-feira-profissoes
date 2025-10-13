@@ -7,13 +7,13 @@ const TestimonialsSection = () => {
       name: "Murilo Santos Barbosa",
       course: "Formado em Sistemas de Informação",
       testimonial: "Iniciei como QA trainee na Fcamara de Santos, trabalhando com clientes como Unimed do Brasil e Lopes Imobiliária. Depois, atuei como QA pleno no SuperApp da Porto Seguro pela Zup em home office. Na mesma consultoria, trabalhei quase dois anos no Itaú em projetos do agronegócio. Atualmente, sou QA Sênior na Zup, focado no produto Vivo Easy, realizando testes de software e automatizando testes de API, E2E e Mobile. Já ministrei palestras e mentorias na área, incluindo uma na Universidade Santa Cecília, onde me formei.",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Murilo"
+      avatar: "src/assets/testemunho1.png"
     },
     {
       name: "Welton José",
       course: "Aluno de Análise e Desenvolvimento de Sistemas",
       testimonial: "Meu nome é Welton José, estudante da Unisanta. Comecei em Sistemas de Informação, mas migrei para Análise e Desenvolvimento. Em 2024, fui segundo lugar no ESG Challenge do Porto de Santos e terceiro no Hacklab do SEMESP. Participei do Projeto Rondon, ministrando aulas em Theobroma, Rondônia, com apoio da Unisanta. Recentemente, fui aprovado para um intercâmbio de seis meses na Universidade de Coimbra, onde estudarei Engenharia Informática.",
-      avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Welton"
+      avatar: "src/assets/testemunho2.png"
     }
   ];
 
