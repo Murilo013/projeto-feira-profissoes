@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Fase1 from "./pages/fase1"; // 👈 importa aqui
+import Fase2 from "./pages/fase2";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
            <Route path="/fase1" element={<Fase1 />} />
+          <Route path="/fase2" element={<Fase2 />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
