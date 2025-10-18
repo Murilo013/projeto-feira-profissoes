@@ -2,7 +2,7 @@
 const CoursesSection = () => {
   return (
     <section className="py-20 bg-card">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">

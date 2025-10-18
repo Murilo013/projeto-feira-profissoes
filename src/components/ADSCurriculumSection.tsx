@@ -57,12 +57,12 @@ const ADSCurriculumSection = () => {
 
   return (
     <section className="py-20 bg-card">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Matriz curricular ADS
         </h2>
 
-          <Carousel className="w-full max-w-5xl mx-auto">
+          <Carousel opts={{ duration: 15 }} className="w-full max-w-5xl mx-auto">
             <CarouselContent>
               {semesters.map((semester, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

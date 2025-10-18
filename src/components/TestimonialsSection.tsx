@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-card">
-      <div className="container mx-auto px-6">
+      <div className="mx-1">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           De aluno para aluno
         </h2>

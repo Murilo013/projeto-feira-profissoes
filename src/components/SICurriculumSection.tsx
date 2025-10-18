@@ -102,7 +102,7 @@ const SICurriculumSection = () => {
 
   return (
     <section className="py-20 bg-card">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Matriz curricular S.I
         </h2>

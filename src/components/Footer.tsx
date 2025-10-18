@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer id="conhecer" className="bg-card py-12 border-t border-border">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         <div className="space-y-8">
           {/* Partnerships */}
           <div className="text-center space-y-6">

@@ -22,7 +22,7 @@ const ADSDetailsSection = () => {
 
   return (
     <section id="ads" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         <div className="relative rounded-3xl overflow-hidden border border-border/50 shadow-2xl">
           {/* Gradient Background - ADS colors */}
           <div 

@@ -20,7 +20,7 @@ const ADSOpportunitiesSection = () => {
 
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="mx-60">
         {/* Knowledge Areas Chart */}
         <div className="mb-20 p-12 rounded-3xl border border-border/50 bg-card/50">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
