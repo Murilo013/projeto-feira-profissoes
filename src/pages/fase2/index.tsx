@@ -1,11 +1,15 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { initFase2 } from './scriptFilmes';
 
-export default function fase2(){
+export default function Fase2() {
+    const navigate = useNavigate();
+
     useEffect(() => {
-        const cleanup = initFase2();
+        // Passa a função navigate para a lógica da fase
+        const cleanup = initFase2(() => navigate('/fase3/introducao'));
         return () => cleanup && cleanup();
-    }, []);
+    }, [navigate]);
 
     return (
         <div className="fase2">
@@ -28,13 +32,12 @@ export default function fase2(){
                 </h1>
 
                 <div className="userInput">
-					<pre>
-						{`#poster {`}
-							height: <input autoComplete="off" type="text" id="inputSize"/> px;
-						{`}`}
-					</pre>
+                    <pre>
+                        {`#poster {`}
+                            height: <input autoComplete="off" type="text" id="inputSize"/> px;
+                        {`}`}
+                    </pre>
                 </div>
-
 
                 <h2 id="acerto">Correto!</h2>
 
@@ -42,5 +45,5 @@ export default function fase2(){
                 <p id="tempo"> Tempo: 0</p>
             </div>
         </div>
-    )
+    );
 }

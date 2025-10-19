@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Fase1 from "./pages/fase1"; // 👈 importa aqui
 import Fase2 from "./pages/fase2";
+import Fase2Intro from "./pages/fase2/introducao";
+import Fase4 from "./pages/fase4"
+import Fase4Intro from "./pages/fase4/introducao";
 
 const queryClient = new QueryClient();
 
@@ -18,8 +21,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-           <Route path="/fase1" element={<Fase1 />} />
+          <Route path="/fase1" element={<Fase1 />} />
+          <Route path="/fase2/introducao" element={<Fase2Intro />} />
           <Route path="/fase2" element={<Fase2 />} />
+          <Route path="/fase4/introducao" element={<Fase4Intro />} />
+          <Route path="/fase4" element={<Fase4 />} />
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

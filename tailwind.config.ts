@@ -51,6 +51,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Cores personalizadas da fase4
+        'azul-detalhes': '#1fcad3',
+        'cor-fundo': '#121214',
+        'cor-fonte': 'aliceblue',
       },
       backgroundImage: {
         'tech-pattern': 'radial-gradient(circle at 2px 2px, hsl(189 100% 50% / 0.15) 1px, transparent 0)',
@@ -59,6 +63,12 @@ export default {
       boxShadow: {
         'glow': '0 0 30px hsl(189 100% 50% / 0.5)',
         'glow-sm': '0 0 15px hsl(189 100% 50% / 0.3)',
+        'fase4-glow': '#dbf4fd2e 0px 0px 80px 0px',
+        'fase4-glow-sm': 'rgba(240, 248, 255, 0.182) 0px 0px 30px 0px',
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'satisfy': ['Satisfy', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",

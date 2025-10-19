@@ -1,6 +1,6 @@
-export function initFase2(): () => void {
+export function initFase2(onFinish?: () => void): () => void {
     let timerId: number | null = null;
-    let elapsedTicks = 0; // each tick = 200ms
+    let elapsedTicks = 0;
 
     const queryInput = document.getElementById('query') as HTMLInputElement | null;
     const searchBtn = document.getElementById('searchBtn') as HTMLButtonElement | null;
@@ -14,10 +14,7 @@ export function initFase2(): () => void {
     const boxEl = document.querySelector('.box') as HTMLElement | null;
     const pageTitle = document.getElementById('pagetitle') as HTMLElement | null;
 
-    // Prevent double-initialization (React StrictMode or re-mounts)
-    if ((window as any).__fase2Init) {
-        return () => {};
-    }
+    if ((window as any).__fase2Init) return () => {};
     (window as any).__fase2Init = true;
 
     const bannedWords = [
@@ -76,8 +73,6 @@ export function initFase2(): () => void {
                 poster2.src = `https://image.tmdb.org/t/p/w500${second.poster_path ?? ''}`;
             }
         } catch (err) {
-            // Minimal handling for demo purposes
-            // eslint-disable-next-line no-console
             console.error(err);
         }
     }
@@ -108,19 +103,22 @@ export function initFase2(): () => void {
         }
     };
 
-    // Attach listeners
+    const handleFinish = () => {
+        if (onFinish) onFinish();
+    };
+
+    // Eventos
     searchBtn?.addEventListener('click', handleSearchClick);
     queryInput?.addEventListener('keypress', handleEnter);
     inputSize?.addEventListener('input', updatePoster);
+    continuar?.addEventListener('click', handleFinish);
 
-    // Cleanup
     return () => {
         searchBtn?.removeEventListener('click', handleSearchClick);
         queryInput?.removeEventListener('keypress', handleEnter);
         inputSize?.removeEventListener('input', updatePoster);
+        continuar?.removeEventListener('click', handleFinish);
         stopTimer();
         (window as any).__fase2Init = false;
     };
 }
-
-
