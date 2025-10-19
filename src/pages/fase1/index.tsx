@@ -10,6 +10,10 @@ export default function Fase1() {
   );
   const [descImg, setDescImg] = useState("Descrição da Imagem");
 
+  const handleStartFase = () => {
+        window.location.href = '/fase2/introducao';
+    };
+
   return (
     <div className="fundo">
       <h1 id="titulo">Edite a página HTML abaixo!</h1>
@@ -79,7 +83,7 @@ export default function Fase1() {
             &lt;/<span className="tag">p</span>&gt;
           </h1>
 
-          <button id="completou">Finalizar</button>
+          <button onClick={handleStartFase} id="completou">Finalizar</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,98 @@
+.fase3-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #00e5ff;
+  overflow: hidden;
+}
+
+.conteudo {
+  width: 50%;
+  padding: 80px;
+}
+
+.tempo {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #00e5ff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+pre {
+  background: transparent;
+  color: #00e5ff;
+  font-size: 1.2rem;
+}
+
+input {
+  background: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+  border-radius: 20px;
+  text-align: center;
+  width: 60px;
+  outline: none;
+}
+
+#correto {
+  display: none;
+  color: #00ff7f;
+  margin-top: 30px;
+}
+
+#menos {
+  display: block;
+  color: #ff5252;
+  margin-top: 30px;
+}
+
+#completou {
+  background: #00ff7f;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+.pista {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.linha-chegada {
+  width: 20px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff 0,
+    #fff 20px,
+    #000 20px,
+    #000 40px
+  );
+  margin-right: 50px;
+}
+
+.carrinho {
+  width: 120px;
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  transition: margin-left 0.5s ease;
+}
