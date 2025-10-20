@@ -15,8 +15,11 @@ import Fase2Intro from "./pages/fase2/introducao";
 import Fase3 from "./pages/fase3"; // 👈 importa aqui
 import Fase3Intro from "./pages/fase3/introducao"
 
-import Fase4 from "./pages/fase4"
+import Fase4 from "./pages/fase4";
 import Fase4Intro from "./pages/fase4/introducao";
+
+import Fase5 from "./pages/fase5";
+import Fase5Intro from "./pages/fase5/introducao";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +43,9 @@ const App = () => (
 
           <Route path="/fase4/introducao" element={<Fase4Intro />} />
           <Route path="/fase4" element={<Fase4 />} />
+
+          <Route path="/fase5/introducao" element={<Fase5Intro />} />
+          <Route path="/fase5" element={<Fase5 />} />
           
           <Route path="*" element={<NotFound />} />
         </Routes>
