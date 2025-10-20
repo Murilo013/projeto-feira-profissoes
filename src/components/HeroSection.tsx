@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-20 pt-20">
         {/* Left Content */}
         <div className="space-y-8">
-          <h1 className="text-5xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-5xl font-bold leading-tight text-white">
             Conheça o curso de <br/> 
             <TextType 
                 text={["Sistemas de Informação", "Análise e Desenvolvimento de Sistemas"]}

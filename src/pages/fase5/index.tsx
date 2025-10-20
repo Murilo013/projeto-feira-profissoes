@@ -1,6 +1,14 @@
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Fase5() {
+
+      const navigate = useNavigate();
+  
+      const handleFinalizar = () => {
+      navigate("/");
+    };
+
   const [tempo, setTempo] = useState(0);
   const [tempoJogo, setTempoJogo] = useState(0);
   const [jogoIniciado, setJogoIniciado] = useState(false);
@@ -16,6 +24,8 @@ export default function Fase5() {
 
   const [playerPos, setPlayerPos] = useState({ top: 100, left: 100 });
   const [targetPos, setTargetPos] = useState({ top: 150, left: 150 });
+
+
 
   useEffect(() => {
     if (jogoIniciado && tempoJogo < 60) {
@@ -165,8 +175,8 @@ export default function Fase5() {
 
         {botaoFinalizarVisivel && (
           <button
-            onClick={() => alert(`Pontuação final: ${score}`)}
-            className="px-4 py-2 border-2 border-cyan-400 rounded-md hover:shadow-cyan-400/40 hover:shadow-lg transition"
+            onClick={handleFinalizar}
+            className="btn-finalizar"
           >
             Finalizar
           </button>

@@ -11,8 +11,8 @@
 }
 
 .conteudo {
-  width: 50%;
-  padding: 80px;
+  width: 40%;
+  padding: 100px;
 }
 
 .tempo {
@@ -23,7 +23,7 @@
 
 h1 {
   font-size: 1.8rem;
-  color: #00e5ff;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -32,6 +32,9 @@ pre {
   background: transparent;
   color: #00e5ff;
   font-size: 1.2rem;
+  background-color: rgb(70, 70, 70);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 input {
@@ -68,7 +71,7 @@ input {
 }
 
 .pista {
-  width: 50%;
+  width: 60%;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -86,7 +89,7 @@ input {
     #000 20px,
     #000 40px
   );
-  margin-right: 50px;
+  margin-right: 250px;
 }
 
 .carrinho {

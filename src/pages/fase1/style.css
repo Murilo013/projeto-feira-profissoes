@@ -183,25 +183,6 @@ input:focus {
   color: #d185fd;
 }
 
-/* Botão de finalizar */
-#completou {
-  background-color: transparent;
-  border: 2px solid #1fcad3;
-  color: #ffffff;
-  font-size: 1.1rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  cursor: pointer;
-  align-self: flex-start;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
-}
-
-#completou:hover {
-  background-color: #1fcad3;
-  color: #121214;
-  transform: translateY(-2px);
-}
 
 /* Responsividade */
 @media (max-width: 600px) {

@@ -19,7 +19,7 @@ export default function Fase1() {
       <h1 id="titulo">Edite a página HTML abaixo!</h1>
 
       <div id="pagina">
-        <h1 className="h1">{h1}</h1>
+        <h1 className="h1 text-black">{h1}</h1>
         <p className="desc">{desc}</p>
         <h2 className="h2">{h2}</h2>
         <img className="img" src={img} alt="" />
@@ -32,27 +32,27 @@ export default function Fase1() {
 
           <label>
             <span>Título (h1)</span>
-            <input value={h1} onChange={(e) => setH1(e.target.value)} />
+            <input className="w-96 text-left px-5" value={h1} onChange={(e) => setH1(e.target.value)} />
           </label>
 
           <label>
             <span>Descrição (p)</span>
-            <input value={desc} onChange={(e) => setDesc(e.target.value)} />
+            <input className="w-96 text-left px-5" value={desc} onChange={(e) => setDesc(e.target.value)} />
           </label>
 
           <label>
             <span>Título da imagem (h2)</span>
-            <input value={h2} onChange={(e) => setH2(e.target.value)} />
+            <input className="w-96 text-left px-5" value={h2} onChange={(e) => setH2(e.target.value)} />
           </label>
 
           <label>
             <span>Link da imagem (src)</span>
-            <input value={img} onChange={(e) => setImg(e.target.value)} />
+            <input className="w-96 text-left px-5" value={img} onChange={(e) => setImg(e.target.value)} />
           </label>
 
           <label>
             <span>Descrição da imagem (p)</span>
-            <input value={descImg} onChange={(e) => setDescImg(e.target.value)} />
+            <input className="w-96 text-left px-5" value={descImg} onChange={(e) => setDescImg(e.target.value)} />
           </label>
         </div>
 
@@ -83,7 +83,7 @@ export default function Fase1() {
             &lt;/<span className="tag">p</span>&gt;
           </h1>
 
-          <button onClick={handleStartFase} id="completou">Finalizar</button>
+          <button onClick={handleStartFase} id="completou" className="btn-finalizar">Finalizar</button>
         </div>
       </div>
     </div>

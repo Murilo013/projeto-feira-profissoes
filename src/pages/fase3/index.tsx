@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./styleCarrinho.css";
 
 export default function Fase3() {
+  const navigate = useNavigate();
   const [userInput, setUserInput] = useState("");
   const [tempo, setTempo] = useState(0);
   const carrinhoRef = useRef<HTMLImageElement | null>(null);
@@ -24,22 +26,25 @@ export default function Fase3() {
       carrinhoRef.current.style.marginLeft = `${numericValue}px`;
     }
 
-    // Linha de chegada em 800px
-    if (numericValue >= 800) {
+    // Linha de chegada entre 900px e 1000px
+    if (numericValue >= 900 && numericValue <= 1000) {
       if (corretoRef.current) corretoRef.current.style.display = "block";
       if (menosRef.current) menosRef.current.style.display = "none";
     } else {
       if (corretoRef.current) corretoRef.current.style.display = "none";
-      if (menosRef.current) menosRef.current.style.display = "block";
+      if (menosRef.current) {
+        menosRef.current.style.display = "block";
+        if (numericValue < 900) {
+          menosRef.current.textContent = "Um pouco mais...";
+        } else {
+          menosRef.current.textContent = "Um pouco menos...";
+        }
+      }
     }
   };
 
   const handleFinalizar = () => {
-    if (completouButtonRef.current) {
-      completouButtonRef.current.disabled = true;
-      completouButtonRef.current.style.opacity = "0.5";
-      completouButtonRef.current.style.cursor = "default";
-    }
+    navigate("/fase4/introducao");
   };
 
   return (
@@ -73,14 +78,13 @@ export default function Fase3() {
             id="completou"
             ref={completouButtonRef}
             onClick={handleFinalizar}
+            className="btn-finalizar"
           >
             Finalizar
           </button>
         </h2>
 
-        <h2 id="menos" ref={menosRef}>
-          Um pouco menos...
-        </h2>
+        <h2 id="menos" ref={menosRef}></h2>
       </div>
 
       <div className="pista">

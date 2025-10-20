@@ -11,6 +11,10 @@ export default function Fase4() {
         return () => cleanup && cleanup();
     }, [navigate]);
 
+      const handleFinalizar = () => {
+    navigate("/fase5/introducao");
+  };
+
     return (
         <div className="min-h-screen bg-cor-fundo flex flex-col items-center justify-center p-6 font-poppins">
             {/* Header */}
@@ -134,7 +138,7 @@ export default function Fase4() {
 
                     <button 
                         id="botao1"
-                        className="w-full py-3 bg-gradient-to-r from-green-500 to-green-400 text-white rounded-2xl font-semibold text-lg transition-all duration-300 hover:from-green-400 hover:to-green-500 hover:scale-105 shadow-lg mb-4"
+                        className="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-2xl font-semibold text-lg transition-all duration-300 hover:from-blue-500 hover:to-cyan-500 hover:scale-105 shadow-lg mb-4"
                     >
                         Consertar Código
                     </button>
@@ -160,7 +164,8 @@ export default function Fase4() {
                     <div className="px-6 pb-6">
                         <button 
                             id="completou"
-                            className="hidden w-full py-3 bg-gradient-to-r from-blue-500 to-blue-400 text-white rounded-2xl font-semibold text-lg transition-all duration-300 hover:from-blue-400 hover:to-blue-500 hover:scale-105 shadow-lg"
+                            className="btn-finalizar hidden w-full"
+                            onClick={handleFinalizar}
                         >
                             Próxima Fase
                         </button>

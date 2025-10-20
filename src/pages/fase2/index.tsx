@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { initFase2 } from './scriptFilmes';
+import './style.css';
 
 export default function Fase2() {
     const navigate = useNavigate();
@@ -27,21 +28,21 @@ export default function Fase2() {
 
             <div className="box">
                 <h1 id="desafio">Desafio</h1>
-                <h1 id="instruc">
+                <h1 id="instruc" className=' text-white '>
                     Iguale o tamanho das imagens alterando a propriedade "height" do poster.
                 </h1>
 
-                <div className="userInput">
+                <div className="userInput ">
                     <pre>
                         {`#poster {`}
-                            height: <input autoComplete="off" type="text" id="inputSize"/> px;
+                            height: <input className="" autoComplete="off" type="text" id="inputSize"/> px;
                         {`}`}
                     </pre>
                 </div>
 
                 <h2 id="acerto">Correto!</h2>
 
-                <button id="completou">Finalizar</button>
+                <button id="completou" className="btn-finalizar hidden">Finalizar</button>
                 <p id="tempo"> Tempo: 0</p>
             </div>
         </div>
