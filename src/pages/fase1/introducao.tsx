@@ -1,5 +1,6 @@
 import './styleIntroducao.css';
 import { useNavigate } from 'react-router-dom';
+import EditorImg from "/img/InterEditor.jpg";
 
 export default function IntroducaoF1() {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function IntroducaoF1() {
                 <h1 className="title">Fase 1 - Editor HTML</h1>
 
                 <img 
-                    src="/img/InterEditor.jpg" 
+                    src={EditorImg} 
                     alt="Editor"
                     className="image"
                 />

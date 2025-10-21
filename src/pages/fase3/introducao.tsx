@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import CarrinhoIntro from "/img/InterCarrinho.png"
 
 export default function IntroducaoF3() {
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ export default function IntroducaoF3() {
                 <h1 className="text-4xl font-bold text-cor-fonte mb-6">🏎️ Fase 3 - Alinhamento</h1>
 
                 <img
-                    src="/img/InterCarrinho.png"
+                    src={CarrinhoIntro}
                     alt="Carrinho"
                     className="w-full max-w-md mx-auto mb-6 rounded-2xl shadow-2xl border-2 border-azul-detalhes"
                 />

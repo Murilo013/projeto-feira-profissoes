@@ -1,3 +1,5 @@
+import Campus from '@/assets/microsoftCAlogo.png';
+
 const Footer = () => {
   return (
     <footer id="conhecer" className="bg-card py-12 border-t border-border">
@@ -8,7 +10,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-lg">Parcerias com:</p>
             <div className="flex flex-wrap justify-center items-center gap-12">
               <img 
-                src="src/assets/microsoftCAlogo.png" 
+                src={Campus}
                 alt="Campus Agreement" 
                 className="h-8 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
               />

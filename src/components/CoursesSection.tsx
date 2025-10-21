@@ -1,4 +1,6 @@
 
+import PredioUnisanta from "@/assets/unisantafachada.png";
+
 const CoursesSection = () => {
   return (
     <section className="py-20 bg-card">
@@ -26,7 +28,7 @@ const CoursesSection = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-primary/10 blur-xl group-hover:bg-primary/20 transition-all duration-500 rounded-2xl" />
             <img 
-              src="src/assets/unisantafachada.png" 
+              src={PredioUnisanta} 
               alt="Prédio Unisanta" 
               className="relative w-full h-auto rounded-2xl shadow-2xl border border-border"
             />

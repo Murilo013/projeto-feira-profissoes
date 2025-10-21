@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import logoUnisanta from "@/assets/logo-vertical-branco.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img 
-            src="src/assets/logo-vertical-branco.png"
+            src={logoUnisanta}
             alt="Unisanta" 
             className="h-10"
             width={200}

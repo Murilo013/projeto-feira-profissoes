@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./styleCarrinho.css";
+import Carrinho from "/img/carrinho.png"
 
 export default function Fase3() {
   const navigate = useNavigate();
@@ -93,7 +94,7 @@ export default function Fase3() {
           className="carrinho"
           ref={carrinhoRef}
           id="carrinho"
-          src="/img/carrinho.png"
+          src={Carrinho}
           alt="Carrinho"
         />
       </div>
