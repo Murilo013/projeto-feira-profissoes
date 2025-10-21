@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   const handleStartFase = () => {
-    navigate('/fase1/introducao');
+    navigate('/feira-de-profissoes/fase1/introducao');
   };
 
   return (
