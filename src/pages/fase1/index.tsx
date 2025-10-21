@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Fase1() {
+  const navigate = useNavigate();
   const [h1, setH1] = useState("Título da Sua Primeira Página");
   const [desc, setDesc] = useState("Descrição da página");
   const [h2, setH2] = useState("Título da Imagem");
@@ -11,7 +13,7 @@ export default function Fase1() {
   const [descImg, setDescImg] = useState("Descrição da Imagem");
 
   const handleStartFase = () => {
-        window.location.href = '/fase2/introducao';
+        navigate('/fase2/introducao');
     };
 
   return (

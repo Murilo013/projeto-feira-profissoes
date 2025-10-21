@@ -1,8 +1,11 @@
 import './styleIntroducao.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function IntroducaoF1() {
+    const navigate = useNavigate();
+
     const handleStartFase = () => {
-        window.location.href = '/fase1';
+        navigate('/fase1');
     };
 
     return (

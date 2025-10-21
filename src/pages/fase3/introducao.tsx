@@ -1,6 +1,10 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function IntroducaoF3() {
+    const navigate = useNavigate();
+
     const handleStartFase = () => {
-        window.location.href = '/fase3';
+        navigate('/fase3');
     };
 
     return (
